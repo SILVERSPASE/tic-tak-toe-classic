@@ -6,5 +6,5 @@ body{font-size:20px; padding-top: 50px;}
     .yellow{background: yellow;}
     .winScreen{text-align: center; color:#228eff; padding-top: 20px; font-size: 40px; font-weight: 500; text-shadow: 2px 1px 1px #24588e; transition: 1s;}
     .button{width: 302px; margin: 10px auto; padding: 5px 10px; border-radius: 6px; background: #2e97ff; transition: 0.5s; cursor: pointer;
-      animation-delay: .8s;}	
+      animation-delay: .8s; color:white;}	
     .button:hover{background: #007eff;}
