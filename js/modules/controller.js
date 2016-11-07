@@ -45,7 +45,7 @@ app.controller('myCtrl', function($scope){
 			$scope.greenScore = 0;
 			$scope.yellowScore = 0;
 		}
-		if ($scope.allTurns == 9){
+		if (!$scope.winScreen && $scope.allTurns == 9) {
 			$scope.winScreen = true;
 			$scope.winText = 'Round Draw';
 		}
