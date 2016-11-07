@@ -22,7 +22,7 @@ app.controller('myCtrl', function($scope){
 
 	$scope.cellClick = function(cellKey){
 // fill in cell and turn next player
-		if (!$scope.winScreen){
+		if ($scope.field[cellKey] == '' && !$scope.winScreen) {
 			$scope.field[cellKey] = ($scope.greenTurn ? 'green': 'yellow');
 			$scope.greenTurn = !$scope.greenTurn;
 			$scope.allTurns++;
