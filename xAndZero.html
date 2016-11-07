@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/sandstone/bootstrap.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/animate.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src='js/app.js'></script>
+<script src='js/modules/controller.js'></script>
+
+<body>
+<div ng-app = 'app' ng-controller = 'myCtrl'>
+	<div class="container">
+		<div class="row">
+			<div class="field">
+				<div ng-repeat = '(cellKey, cellValue) in field' class='cell {{cellValue}}' ng-click = 'cellClick(cellKey)'>
+					{{cellValue}}
+				</div>
+			</div>
+			<div class="winScreen" ng-show = 'winScreen'>
+				<div class = "animated fadeIn">{{winText}}</div>
+				<div class="button btn-primary animated fadeIn" ng-click = 'newGame()'>New Game</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
