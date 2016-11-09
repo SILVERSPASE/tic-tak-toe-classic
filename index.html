@@ -15,6 +15,7 @@
 			<div class="field">
 				<div data-ng-repeat = '(cellKey, cellValue) in field' class='cell {{cellValue}}' data-ng-click = 'cellClick(cellKey)'>
 					{{cellValue}}
+					
 				</div>
 			</div>
 			<button data-ng-hide = 'winScreen' class = 'button btn-primary animated fadeIn' data-ng-click = 'newGame()'>Restart Game</button>
