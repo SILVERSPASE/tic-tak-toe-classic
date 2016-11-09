@@ -1,4 +1,4 @@
 # tic-tak-toe-classic
 
 Demo:
-https://silverspase.github.io/tic-tak-toe-classic/
+https://silverspase.github.io/tic-tak-toe-classic-AngularJS/
