@@ -18,7 +18,9 @@
 					
 				</div>
 			</div>
-			<button data-ng-hide = 'winScreen' class = 'button btn-primary animated fadeIn' data-ng-click = 'newGame()'>Restart Game</button>
+			<div data-ng-hide = 'winScreen' >
+				<button data-ng-show = 'allTurns > 0' class = 'button btn-primary animated fadeIn' data-ng-click = 'newGame()'>Restart Game</button>
+			</div>
 			<div class="winScreen" data-ng-show = 'winScreen'>
 				<div class = "animated fadeIn">{{winText}}</div>
 				<div class="button btn-primary animated fadeIn" data-ng-click = 'newGame()'>New Game</div>
