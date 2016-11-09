@@ -9,17 +9,18 @@
 <script src='js/modules/controller.js'></script>
 
 <body>
-<div ng-app = 'app' ng-controller = 'myCtrl'>
+<div data-ng-app = 'app' data-ng-controller = 'myCtrl'>
 	<div class="container">
-		<div class="row">
+		<div class="row tac">
 			<div class="field">
-				<div ng-repeat = '(cellKey, cellValue) in field' class='cell {{cellValue}}' ng-click = 'cellClick(cellKey)'>
+				<div data-ng-repeat = '(cellKey, cellValue) in field' class='cell {{cellValue}}' data-ng-click = 'cellClick(cellKey)'>
 					{{cellValue}}
 				</div>
 			</div>
-			<div class="winScreen" ng-show = 'winScreen'>
+			<button data-ng-hide = 'winScreen' class = 'button btn-primary animated fadeIn' data-ng-click = 'newGame()'>Restart Game</button>
+			<div class="winScreen" data-ng-show = 'winScreen'>
 				<div class = "animated fadeIn">{{winText}}</div>
-				<div class="button btn-primary animated fadeIn" ng-click = 'newGame()'>New Game</div>
+				<div class="button btn-primary animated fadeIn" data-ng-click = 'newGame()'>New Game</div>
 			</div>
 		</div>
 	</div>

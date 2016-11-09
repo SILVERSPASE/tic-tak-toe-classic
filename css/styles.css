@@ -8,3 +8,4 @@ body{font-size:20px; padding-top: 50px;}
     .button{width: 306px; margin: 10px auto; padding: 5px 10px; border-radius: 6px; background: #2e97ff; transition: 0.5s; cursor: pointer;
       animation-delay: .8s;}	
     .button:hover{background: #007eff;}
+    .tac{text-align: center;}
