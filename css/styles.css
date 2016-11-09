@@ -1,11 +1,19 @@
-body{font-size:20px; padding-top: 50px;}
-    .field{width: 302px; border: 1px solid #6cb4ff; margin:0 auto;}
-    .cell{display: inline-block; border: 1px solid #6cb4ff; width: 100px; height: 100px; vertical-align: top; overflow: hidden; 
-    	text-indent:200%; cursor:pointer;}
-    .green{background: green;}
-    .yellow{background: yellow;}
-    .winScreen{text-align: center; color:#228eff; padding-top: 20px; font-size: 40px; font-weight: 500; text-shadow: 2px 1px 1px #24588e; transition: 1s;}
-    .button{width: 306px; margin: 10px auto; padding: 5px 10px; border-radius: 6px; background: #2e97ff; transition: 0.5s; cursor: pointer;
-      animation-delay: .8s;}	
-    .button:hover{background: #007eff;}
-    .tac{text-align: center;}
+body{color:#0080f6; font-size:20px; padding-top: 50px;}
+.boxWrapper{border: 1px solid #b5dcff;padding: 10px;display: inline-block;width: 100%;}
+    .leftFilterBar{border: 1px solid #b5dcff;position: relative;padding-top: 49px;}
+        .clearFilter{position: absolute;top: 4px;left:10px;}
+        .filter{padding: 10px;}
+            .filterName {padding-left: 24px; font-size: 22px;}
+                .check, .radio{display: inline-block;width: 16px;height: 16px;border: 1px solid #878787;
+                    min-height: initial;margin: 0px; line-height: 16px; margin-right: 5px;}
+                .radio{border-radius: 50%; }
+                .check span, .radio span {display: block; height: 100%; cursor:pointer;}
+                .check span.active, .radio span.active{background: #0080f6;width: 12px;height: 12px;border: 2px solid white;box-sizing: border-box; margin: 1px;vertical-align: top;text-align: center;}
+                .radio span.active{border-radius: 50%; }
+                .check span.active.false, .radio span.active.false{background: none;}
+    .content{vertical-align: top;padding: 0px 0px 15px 10px;height: 100%;}
+        .item{border: 1px solid #b5dcff;margin: 0 0 15px 0;padding: 15px;}
+
+.button{width: 90%;background: #1fc343;border:none;margin: 10px auto 0 auto;box-sizing: border-box;color: white;display: block;padding: 5px 0;}
+
+    
